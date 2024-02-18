@@ -12,10 +12,6 @@ RapportRave is a dynamic and engaging chat application that allows users to conn
 - **Customizable Profiles**: Personalize your profile with photos, status updates, and more.
 - **Security and Privacy**: Your privacy is our priority. We use end-to-end encryption to keep your conversations secure.
 
-## Installation
-
-To use RapportRave, simply visit our website at [www.rapportrave.com](https://www.rapportrave.com) or download our mobile app from the App Store or Google Play Store.
-
 ## Getting Started
 
 1. Sign up for a RapportRave account using your email address.
