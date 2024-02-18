@@ -2,7 +2,7 @@
 
 RapportRave is a dynamic and engaging chat application that allows users to connect, communicate, and build meaningful relationships in real-time.
 
-## Features
+## Features and Future goals
 
 - **Real-Time Messaging**: Instantly connect with friends, family, and colleagues through real-time messaging.
 - **Multimedia Sharing**: Share photos, videos, documents, and more to enhance your conversations.
@@ -18,10 +18,9 @@ To use RapportRave, simply visit our website at [www.rapportrave.com](https://ww
 
 ## Getting Started
 
-1. Sign up for a RapportRave account using your email address or phone number.
-2. Customize your profile and add friends to start chatting.
-3. Explore the various features, including multimedia sharing, voice and video calls, and group chats.
-4. Enjoy seamless communication with your contacts in real-time!
+1. Sign up for a RapportRave account using your email address.
+2. Choose contacts.
+3. Enjoy seamless communication with your contacts in real-time!
 
 ## Support
 
