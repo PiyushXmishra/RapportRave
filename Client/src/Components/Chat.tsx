@@ -1,9 +1,9 @@
-import { useEffect, useState ,useRef} from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Contacts from "./Contacts";
 const Chat = () => {
     const navigate = useNavigate();
-    const [currentUser, setCurrentUser] = useState(undefined);
+    const [, setCurrentUser] = useState(undefined);
     useEffect(() => {
         const fetchData = async () => {
             const localStorageKey = "jwtToken";

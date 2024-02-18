@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import  { useEffect, useState, useRef } from 'react';
 import axios from 'axios';
 import background from './240_F_416281579_t45mfWPWBlgGi9QV2KmqVem5aJfgXN9G.jpg';
 const Contacts = () => {
@@ -114,7 +114,7 @@ const logout=()=>{
       {userTableVisible && (
         <div>
           <ul className="border-2 w-max rounded-lg sm:w-52 md:w-64 h-screen overflow-y-scroll scrollbar-none">
-            {users.map((user, index) => (
+            {users.map((user) => (
               <li className="border-2 rounded text-xl text-white p-5" key={user._id} onClick={() => handleUserClick(user)}>
                 {user.firstName} {user.lastName}
               </li>
