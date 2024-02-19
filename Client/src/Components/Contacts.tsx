@@ -46,7 +46,7 @@ const Contacts = () => {
     if (userId) {
       getChat();
       // Start long polling for new messages
-      const intervalId = setInterval(getChat, 100); // Fetch every 5 seconds
+      const intervalId = setInterval(getChat, 10); // Fetch every 5 seconds
       return () => clearInterval(intervalId); // Cleanup on unmount
     }
   }, [userId]);
