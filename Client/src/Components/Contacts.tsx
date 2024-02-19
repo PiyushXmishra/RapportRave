@@ -1,6 +1,7 @@
 import  { useEffect, useState, useRef } from 'react';
 import axios from 'axios';
 import background from './240_F_416281579_t45mfWPWBlgGi9QV2KmqVem5aJfgXN9G.jpg';
+import Loader from "../assets/icegif-1260.gif"
 const Contacts = () => {
   const myStyle = {
     backgroundImage: `url(${background})`,
@@ -102,11 +103,18 @@ const logout=()=>{
   };
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return (
+      
+      <div className='fixed top-0 left-0 w-full h-full flex justify-center items-center bg-opacity-50 scale-75'>
+        <img src={Loader} alt="Loading..." />
+      </div>
+
+    );
   }
 
+
   if (error) {
-    return <p>{error}</p>;
+    return <div className=' text-lg sm:text-2xl md:text-3xl lg:text-4xl items-center justify-center flex h-screen text-black font-semibold'>{error}</div>;
   }
 
   return (
