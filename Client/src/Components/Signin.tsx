@@ -38,7 +38,6 @@ const Signin = () => {
   };
 
   const handleSubmit = async (event: any) => {
-    console.log(values)
     event.preventDefault();
     if (handleValidation()) {
       console.log("in validation!")

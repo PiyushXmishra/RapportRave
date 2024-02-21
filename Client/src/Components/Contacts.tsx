@@ -26,7 +26,6 @@ const Contacts = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(`${import.meta.env.VITE_EXPRESS_URL}/user/bulk`);
-        console.log('API Response:', response.data);
         // Filter out the currently logged-in user from the list of all users
         const loggedInUserId = localStorage.getItem('userId');
         const filteredUsers = response.data.user.filter((user: { _id: string | null; }) => user._id !== loggedInUserId);
@@ -69,7 +68,6 @@ const Contacts = () => {
         from: localStorage.getItem('userId'),
         to: userId,
       });
-      console.log(response.data);
       setMessages(response.data); // Scroll to bottom after receiving new messages
     } catch (error) {
       console.error('Error fetching chat messages:', error);
