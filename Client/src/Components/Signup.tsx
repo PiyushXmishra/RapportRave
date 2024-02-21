@@ -5,7 +5,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import OAuth from "./OAuth";
 const Signup = () => {
   const navigate = useNavigate();
   const toastOptions: any = {
@@ -179,7 +178,6 @@ const Signup = () => {
         </svg>
         Sign Up
       </button>
-      <OAuth/>
       <p className="mt-6 text-xs text-white text-center">
         Already have an account?{" "}
         <Link to="/Signin" className="text-blue-900 font-semibold">Sign in</Link>

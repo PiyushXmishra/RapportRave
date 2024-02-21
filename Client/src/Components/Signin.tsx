@@ -5,7 +5,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import OAuth from "./OAuth";
 const Signin = () => {
   const navigate = useNavigate();
   const toastOptions: any = {
@@ -93,7 +92,6 @@ const Signin = () => {
         >
           Sign In
         </button>
-        <OAuth/>
         
         {/* <button
           onClick={handleGoogleClick}
