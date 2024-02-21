@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import OAuth from "./OAuth";
 const Signup = () => {
   const navigate = useNavigate();
   const toastOptions: any = {
@@ -60,7 +61,28 @@ const Signup = () => {
       toast.error("Email is required.", toastOptions);
       return false;
     }
-
+  // const handleValidation = () => {
+  //   switch (true) {
+  //     case values.password !== values.confirmPassword:
+  //       toast.error("Password and confirm password should be same.", toastOptions);
+  //       return false;
+  //     case values.firstName.length < 1:
+  //       toast.error("firstName should be greater than 1 characters.", toastOptions);
+  //       return false;
+  //     case values.lastName.length < 1:
+  //       toast.error("lastName should be greater than 1 characters.", toastOptions);
+  //       return false;
+  //     case values.password.length < 8:
+  //       toast.error("Password should be equal or greater than 8 characters.", toastOptions);
+  //       return false;
+  //     case values.email === "":
+  //       toast.error("Email is required.", toastOptions);
+  //       return false;
+  //     default:
+  //       return true;
+  //   }
+  // };
+  
     return true;
   };
 
@@ -157,6 +179,7 @@ const Signup = () => {
         </svg>
         Sign Up
       </button>
+      <OAuth/>
       <p className="mt-6 text-xs text-white text-center">
         Already have an account?{" "}
         <Link to="/Signin" className="text-blue-900 font-semibold">Sign in</Link>
