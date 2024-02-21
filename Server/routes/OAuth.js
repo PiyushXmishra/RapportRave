@@ -12,7 +12,7 @@ router.post("/google", async (req, res) => {
       const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET);
       const { password: pass, ...rest } = user._doc;
       res
-        .cookie("access_token", token, { httpOnly: true })
+        .cookie("access_token", token)
         .status(200)
         .json(rest);
     } else {
@@ -30,7 +30,7 @@ router.post("/google", async (req, res) => {
       const token = jwt.sign({ userId: newUser._id }, process.env.JWT_SECRET);
       const { password: pass, ...rest } = newUser._doc;
       res
-        .cookie("access_token", token, { httpOnly: true })
+        .cookie("access_token", token)
         .status(200)
         .json(rest);
     }
