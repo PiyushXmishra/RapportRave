@@ -104,7 +104,10 @@ const Contacts = () => {
     if (chatVisible) {
       setChatVisible(false); // Close chat section when showing contacts
     }
-    setUserTableVisible(prevState => !prevState);
+    else{
+      setChatVisible(true);
+    }
+        setUserTableVisible(prevState => !prevState);
   };
 
   if (isLoading) {
