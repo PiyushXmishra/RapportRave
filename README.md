@@ -5,9 +5,6 @@ RapportRave is a dynamic and engaging chat application that allows users to conn
 ## Features and Future goals
 
 - **Real-Time Messaging**: Instantly connect with friends, family, and colleagues through real-time messaging.
-- **Multimedia Sharing**: Share photos, videos, documents, and more to enhance your conversations.
-- **Group Chats**: Create group chats with multiple participants to collaborate and stay connected.
-- **Voice and Video Calls**: Enjoy high-quality voice and video calls with your contacts.
 - **Emojis and Stickers**: Express yourself with a wide range of emojis and stickers.
 - **Customizable Profiles**: Personalize your profile with photos, status updates, and more.
 - **Security and Privacy**: Your privacy is our priority. We use end-to-end encryption to keep your conversations secure.
